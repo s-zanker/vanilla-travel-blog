@@ -1,0 +1,12 @@
+{
+  "cities": [
+    {
+      "name": "Hamburg",
+      "details": "some details goes here"
+    },
+    {
+      "name": "Berlin",
+      "details": "some details goes here"
+    }
+  ]
+}
