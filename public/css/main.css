@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Layout */
+body {
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: lightgray;
+}
+
+header i.logo {
+  margin-right: 10px;
+}
+
+/* TYPO */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+header i.logo {
+  font-size: 30px;
+}
+
+header,
+nav {
+  font-family: 'Barriecito', system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+nav a {
+  font-size: 1.4rem;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+nav ul li {
+  list-style-type: none;
+}
+nav a {
+  padding: 10px;
+}
+
+/* Hyperlinks */
+a {
+  text-decoration: none;
+  color: #333;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+nav a.active {
+  color: blueviolet;
+  pointer-events: none; /*link of actual side can not be clicked*/
+}
