@@ -8,7 +8,7 @@ POST http://localhost:3000/locations
 
 {
   "id": "11",
-  "city": "Brno",
+  "name": "Brno",
   "country": "Czech Republic",
   "visit_date_from": "2021-06-10",
   "visit_date_to": "2021-06-15",

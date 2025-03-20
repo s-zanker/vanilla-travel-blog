@@ -2,7 +2,7 @@
   "locations": [
     {
       "id": "1",
-      "city": "New York City",
+      "name": "New York City",
       "country": "USA",
       "visit_date_from": "2005-06-15",
       "visit_date_to": "2005-06-20",
@@ -11,7 +11,7 @@
     },
     {
       "id": "2",
-      "city": "Cape Cod",
+      "name": "Cape Cod",
       "country": "USA",
       "visit_date_from": "2008-07-10",
       "visit_date_to": "2008-07-15",
@@ -20,7 +20,7 @@
     },
     {
       "id": "3",
-      "city": "Amsterdam",
+      "name": "Amsterdam",
       "country": "Netherlands",
       "visit_date_from": "2011-04-02",
       "visit_date_to": "2011-04-06",
@@ -29,7 +29,7 @@
     },
     {
       "id": "4",
-      "city": "Apulia",
+      "name": "Apulia",
       "country": "Italy",
       "visit_date_from": "2014-09-05",
       "visit_date_to": "2014-09-10",
@@ -38,7 +38,7 @@
     },
     {
       "id": "5",
-      "city": "Paris",
+      "name": "Paris",
       "country": "France",
       "visit_date_from": "2016-02-20",
       "visit_date_to": "2016-02-24",
@@ -47,7 +47,7 @@
     },
     {
       "id": "6",
-      "city": "Rome",
+      "name": "Rome",
       "country": "Italy",
       "visit_date_from": "2017-03-12",
       "visit_date_to": "2017-03-16",
@@ -56,7 +56,7 @@
     },
     {
       "id": "7",
-      "city": "Berlin",
+      "name": "Berlin",
       "country": "Germany",
       "visit_date_from": "2019-05-05",
       "visit_date_to": "2019-05-10",
@@ -65,7 +65,7 @@
     },
     {
       "id": "8",
-      "city": "Hamburg",
+      "name": "Hamburg",
       "country": "Germany",
       "visit_date_from": "2020-08-15",
       "visit_date_to": "2020-08-20",
@@ -74,7 +74,7 @@
     },
     {
       "id": "9",
-      "city": "Graz",
+      "name": "Graz",
       "country": "Austria",
       "visit_date_from": "2022-10-01",
       "visit_date_to": "2022-10-05",
@@ -83,7 +83,7 @@
     },
     {
       "id": "10",
-      "city": "Malcesine",
+      "name": "Malcesine",
       "country": "Italy",
       "visit_date_from": "2023-07-10",
       "visit_date_to": "2023-07-14",
