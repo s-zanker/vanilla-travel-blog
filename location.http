@@ -1,0 +1,22 @@
+### Location-Handling Create, Update, Delete
+
+GET http://localhost:3000/locations
+
+### Create new location
+
+POST http://localhost:3000/locations
+
+{
+  "id": "11",
+  "city": "Brno",
+  "country": "Czech Republic",
+  "visit_date_from": "2021-06-10",
+  "visit_date_to": "2021-06-15",
+  "thumbnail": "https://example.com/images/brno-thumbnail.jpg",
+  "large_image": "https://example.com/images/brno-large.jpg",
+  "description": "Brno, the second-largest city in the Czech Republic, is known for its vibrant cultural scene, historic landmarks like Špilberk Castle, and stunning modernist architecture. A city that blends history and contemporary life, perfect for both urban exploration and nature walks in its nearby hills."
+}
+
+### Delete location
+
+DELETE http://localhost:3000/locations/11
