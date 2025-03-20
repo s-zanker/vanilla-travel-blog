@@ -13,11 +13,42 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  background-color: lightgray;
+  background-color: rgb(231, 231, 231);
 }
 
 header i.logo {
   margin-right: 10px;
+}
+
+.flexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px;
+}
+
+.locationCard {
+  width: 300px;
+  background: rgb(243, 242, 242);
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: transform 0.2s;
+}
+
+.locationCard:hover {
+  transform: scale(1.05);
+}
+
+.locationCard > img {
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.locationCard .date {
+  margin-left: 5px;
 }
 
 /* TYPO */
