@@ -51,6 +51,10 @@ header i.logo {
   margin-left: 5px;
 }
 
+.locationCard .icon {
+  margin-left: 10px;
+}
+
 /* TYPO */
 body {
   font-family: Arial, sans-serif;
