@@ -6,7 +6,7 @@
       "country": "USA",
       "visit_date_from": "2005-06-15",
       "visit_date_to": "2005-06-20",
-      "thumbnail": "https://example.com/images/new-york-thumbnail.jpg",
+      "thumbnail": "img/pixabay-nyc-thumb.jpg",
       "description": "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world."
     },
     {
@@ -15,7 +15,7 @@
       "country": "USA",
       "visit_date_from": "2008-07-10",
       "visit_date_to": "2008-07-15",
-      "thumbnail": "https://example.com/images/cape-cod-thumbnail.jpg",
+      "thumbnail": "img/pixabay-berlin-thumb.jpg",
       "description": "Whenever I find myself growing grim about the mouth; whenever it is a damp, drizzly November in my soul; whenever I find myself involuntarily pausing before coffin warehouses, and bringing up the rear of every funeral I meet; and especially whenever my hypos get such an upper hand of me, that it requires a strong moral principle to prevent me from deliberately stepping into the street, and methodically knocking people’s hats off—then, I account it high time to get to sea as soon as I can."
     },
     {
@@ -24,7 +24,7 @@
       "country": "Netherlands",
       "visit_date_from": "2011-04-02",
       "visit_date_to": "2011-04-06",
-      "thumbnail": "https://example.com/images/amsterdam-thumbnail.jpg",
+      "thumbnail": "img/pixabay-nyc-thumb.jpg",
       "description": "I am not going to trouble you with the details of my own experience in the matter of the whaling voyage. Suffice it to say that my mind was made up, and the very next day I was off in the train, bound for Amsterdam."
     },
     {
@@ -33,7 +33,7 @@
       "country": "Italy",
       "visit_date_from": "2014-09-05",
       "visit_date_to": "2014-09-10",
-      "thumbnail": "https://example.com/images/apulia-thumbnail.jpg",
+      "thumbnail": "img/pixabay-berlin-thumb.jpg",
       "description": "In the interval between the time I had first decided to go to sea, and the time I actually shipped aboard the Pequod, I had no idea of what was in store for me. But it’s a good thing that no man can ever anticipate what a whaling voyage is going to be."
     },
     {
@@ -42,7 +42,7 @@
       "country": "France",
       "visit_date_from": "2016-02-20",
       "visit_date_to": "2016-02-24",
-      "thumbnail": "https://example.com/images/paris-thumbnail.jpg",
+      "thumbnail": "img/pixabay-nyc-thumb.jpg",
       "description": "Now, by reason of the various harpoons in the world, and of the whale’s self-delightful life of easy pleasures, I had no idea that I was at any time going to fall in with the well-known character, Captain Ahab."
     },
     {
@@ -51,7 +51,7 @@
       "country": "Italy",
       "visit_date_from": "2017-03-12",
       "visit_date_to": "2017-03-16",
-      "thumbnail": "https://example.com/images/rome-thumbnail.jpg",
+      "thumbnail": "img/pixabay-berlin-thumb.jpg",
       "description": "It was the devious nature of my journey that led me to Rome. Not that I had any notion of the things I would eventually see, but I was on my way to experience the unfamiliar."
     },
     {
@@ -60,7 +60,7 @@
       "country": "Germany",
       "visit_date_from": "2019-05-05",
       "visit_date_to": "2019-05-10",
-      "thumbnail": "https://example.com/images/berlin-thumbnail.jpg",
+      "thumbnail": "img/pixabay-berlin-thumb.jpg",
       "description": "The sea, my friends, is an unpredictable friend. It gives, it takes, and what it takes, it takes forever. Berlin seemed just as full of surprises when I first arrived."
     },
     {
@@ -69,7 +69,7 @@
       "country": "Germany",
       "visit_date_from": "2020-08-15",
       "visit_date_to": "2020-08-20",
-      "thumbnail": "https://example.com/images/hamburg-thumbnail.jpg",
+      "thumbnail": "img/pixabay-nyc-thumb.jpg",
       "description": "I shall never forget my journey through the city of Hamburg. It was one of those places where every corner had an extraordinary surprise waiting for me. But as the sea can be full of contradictions, so too was Hamburg."
     },
     {
@@ -78,7 +78,7 @@
       "country": "Austria",
       "visit_date_from": "2022-10-01",
       "visit_date_to": "2022-10-05",
-      "thumbnail": "https://example.com/images/graz-thumbnail.jpg",
+      "thumbnail": "img/pixabay-berlin-thumb.jpg",
       "description": "I was quite struck by the peacefulness of the ocean when I first saw it near Graz. Its tranquility seemed to reflect the city’s vast openness and sense of possibility."
     },
     {
@@ -87,7 +87,7 @@
       "country": "Italy",
       "visit_date_from": "2023-07-10",
       "visit_date_to": "2023-07-14",
-      "thumbnail": "https://example.com/images/malcesine-thumbnail.jpg",
+      "thumbnail": "img/pixabay-nyc-thumb.jpg",
       "description": "Ah, Malcesine! The ocean’s pulse is powerful here. And it is here, among the waves, where I found myself reminded of the unpredictability of life and the enduring mystery of the sea."
     }
   ]
