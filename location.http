@@ -20,3 +20,8 @@ POST http://localhost:3000/locations
 ### Delete location
 
 DELETE http://localhost:3000/locations/11
+
+### Weather data from MeteoSource
+
+### New York City
+GET https://www.meteosource.com/api/v1/free/point?place_id=new-york-city&sections=current&language=en&units=auto&key=5i98pnmcmhafbmlz5qekijo9u36v81kmm1hih5i4
