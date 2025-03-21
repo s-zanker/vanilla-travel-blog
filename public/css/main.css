@@ -20,6 +20,19 @@ header i.logo {
   margin-right: 10px;
 }
 
+.twoColumn {
+  display: flex;
+  justify-content: center;
+}
+.twoColumn > div {
+  width: 48%;
+}
+
+.twoColumn img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
 .flexContainer {
   display: flex;
   flex-wrap: wrap;
