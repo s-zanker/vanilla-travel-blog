@@ -17,9 +17,9 @@ async function fetchLocations() {
     locationCard.classList.add('locationCard');
 
     // Add click Eventlistener to locationCard
+
     locationCard.addEventListener('click', function () {
-      console.log(location);
-      alert('Location wurde geklickt');
+      loadDetails(location);
     });
 
     // image
@@ -62,6 +62,47 @@ async function fetchLocations() {
   });
 
   console.log(locationsContainer);
+}
+
+//Load details page on click on locationCard
+function loadDetails(locationClicked) {
+  console.log(locationClicked.name);
+
+  const detailsContainer = document.getElementById('detailsContainer');
+  detailsContainer.innerHTML = '';
+
+  // large image
+  const img = document.createElement('img');
+  img.src = locationClicked.bigImage;
+  img.alt = locationClicked.name;
+
+  //location details
+  const detailsDiv = document.createElement('div');
+  // name of location
+  const h2 = document.createElement('h2');
+  h2.textContent = locationClicked.name;
+  // paragraph for icon and date from - to
+  const pIconDate = document.createElement('p');
+  // calender icon
+  const icon = document.createElement('i');
+  icon.classList.add('far', 'fa-calendar', 'icon');
+  // date from - to
+  const spanDate = document.createElement('span');
+  spanDate.classList.add('date');
+  spanDate.textContent =
+    locationClicked.visit_date_from + ' - ' + locationClicked.visit_date_to;
+  //paragraph for the details text
+  const pText = document.createElement('p');
+  pText.textContent = locationClicked.description;
+
+  pIconDate.appendChild(icon);
+  pIconDate.appendChild(spanDate);
+  detailsDiv.appendChild(h2);
+  detailsDiv.appendChild(pIconDate);
+  detailsDiv.appendChild(pText);
+
+  detailsContainer.appendChild(img);
+  detailsContainer.appendChild(detailsDiv);
 }
 
 fetchLocations();
