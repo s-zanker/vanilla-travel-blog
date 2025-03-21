@@ -26,22 +26,17 @@ async function fetchLocations() {
     const img = document.createElement('img');
     img.src = thumbnail; // Das Thumbnail als Bildquelle
     img.alt = name; // Alt-Text für das Bild
-
     // name of location
     const h2 = document.createElement('h2');
     h2.textContent = name; // Der Name der Location
-
     // paragraph for country, icon and date
     const p = document.createElement('p');
-
     // country
     const spanCountry = document.createElement('span');
     spanCountry.textContent = country;
-
     // calender icon
     const icon = document.createElement('i');
     icon.classList.add('far', 'fa-calendar', 'icon');
-
     // date
     const spanDate = document.createElement('span');
     spanDate.classList.add('date');
@@ -75,7 +70,6 @@ function loadDetails(locationClicked) {
   const img = document.createElement('img');
   img.src = locationClicked.bigImage;
   img.alt = locationClicked.name;
-
   //location details
   const detailsDiv = document.createElement('div');
   // name of location
@@ -85,12 +79,11 @@ function loadDetails(locationClicked) {
   const pIconDate = document.createElement('p');
   // calender icon
   const icon = document.createElement('i');
-  icon.classList.add('far', 'fa-calendar', 'icon');
+  icon.classList.add('far', 'fa-calendar');
   // date from - to
   const spanDate = document.createElement('span');
   spanDate.classList.add('date');
-  spanDate.textContent =
-    locationClicked.visit_date_from + ' - ' + locationClicked.visit_date_to;
+  spanDate.textContent = `${locationClicked.visit_date_from} \u2014 ${locationClicked.visit_date_to}`;
   //paragraph for the details text
   const pText = document.createElement('p');
   pText.textContent = locationClicked.description;
