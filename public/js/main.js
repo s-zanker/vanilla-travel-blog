@@ -16,6 +16,12 @@ async function fetchLocations() {
     const locationCard = document.createElement('div');
     locationCard.classList.add('locationCard');
 
+    // Add click Eventlistener to locationCard
+    locationCard.addEventListener('click', function () {
+      console.log(location);
+      alert('Location wurde geklickt');
+    });
+
     // image
     const img = document.createElement('img');
     img.src = thumbnail; // Das Thumbnail als Bildquelle
