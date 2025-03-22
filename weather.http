@@ -1,0 +1,7 @@
+### Weather data from MeteoSource
+
+### New York City - current weather
+GET https://www.meteosource.com/api/v1/free/point?place_id=new-york-city&sections=current&language=en&units=auto&key=5i98pnmcmhafbmlz5qekijo9u36v81kmm1hih5i4
+
+### New York City - with 5 day forecast
+GET https://www.meteosource.com/api/v1/free/point?place_id=new-york-city&sections=current%2C%20daily&language=en&units=auto&key=5i98pnmcmhafbmlz5qekijo9u36v81kmm1hih5i4
