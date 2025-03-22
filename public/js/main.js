@@ -84,11 +84,14 @@ function loadDetails(locationClicked) {
   // name of location
   const h2 = document.createElement('h2');
   h2.textContent = locationClicked.name;
+  // country
+  const spanCountry = document.createElement('span');
+  spanCountry.textContent = locationClicked.country;
   // paragraph for icon and date from - to
   const pIconDate = document.createElement('p');
   // calender icon
   const icon = document.createElement('i');
-  icon.classList.add('far', 'fa-calendar');
+  icon.classList.add('far', 'fa-calendar', 'icon');
   // date from - to
   const spanDate = document.createElement('span');
   spanDate.classList.add('date');
@@ -97,6 +100,7 @@ function loadDetails(locationClicked) {
   const pText = document.createElement('p');
   pText.textContent = locationClicked.description;
 
+  pIconDate.appendChild(spanCountry);
   pIconDate.appendChild(icon);
   pIconDate.appendChild(spanDate);
   detailsDiv.appendChild(h2);
