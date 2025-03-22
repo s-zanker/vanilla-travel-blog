@@ -4,6 +4,15 @@ async function fetchLocations() {
   const locationsContainer = document.getElementById('locations');
   locationsContainer.innerHTML = '';
 
+  // Automatically load the details of the first location, if the location array is not empty
+  if (locations.length > 0) {
+    /* //randomly loading a location of the array
+    const randomIndex = Math.floor(Math.random() * locations.length);
+    loadDetails(locations[randomIndex]); */
+    //loads the first location of the array
+    loadDetails(locations[0]);
+  }
+
   locations.forEach((location) => {
     // fetch location data
     const thumbnail = location.thumbnail;
