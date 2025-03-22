@@ -1,16 +1,16 @@
 async function fetchLocations() {
-  const response = await fetch('http://localhost:3000/locations');
+  const response = await fetch('http://localhost:8080/locations');
   const locations = await response.json();
   const locationsContainer = document.getElementById('locations');
   locationsContainer.innerHTML = '';
 
   // Automatically load the details of the first location, if the location array is not empty
   if (locations.length > 0) {
-    /* //randomly loading a location of the array
-    const randomIndex = Math.floor(Math.random() * locations.length);
-    loadDetails(locations[randomIndex]); */
+    const firstLocation = locations[0];
+    // fetch current weather of the first location
+    await loadCurrentWeather(firstLocation);
     //loads the first location of the array
-    loadDetails(locations[0]);
+    loadDetails(firstLocation);
   }
 
   locations.forEach((location) => {
@@ -26,7 +26,6 @@ async function fetchLocations() {
     locationCard.classList.add('locationCard');
 
     // Add click Eventlistener to locationCard
-
     locationCard.addEventListener('click', function () {
       loadDetails(location);
     });
@@ -72,43 +71,44 @@ async function fetchLocations() {
 function loadDetails(locationClicked) {
   console.log(locationClicked.name);
 
-  const detailsContainer = document.getElementById('detailsContainer');
-  detailsContainer.innerHTML = '';
+  const detailsImg = document.getElementById('details-img');
+  const detailsName = document.getElementById('details-name');
+  const detailsCountry = document.getElementById('details-country');
+  const detailsDateFromTo = document.getElementById('details-date-from-to');
+  const detailsSummary = document.getElementById('details-summary');
 
-  // large image
-  const img = document.createElement('img');
-  img.src = locationClicked.bigImage;
-  img.alt = locationClicked.name;
-  //location details
-  const detailsDiv = document.createElement('div');
-  // name of location
-  const h2 = document.createElement('h2');
-  h2.textContent = locationClicked.name;
-  // country
-  const spanCountry = document.createElement('span');
-  spanCountry.textContent = locationClicked.country;
-  // paragraph for icon and date from - to
-  const pIconDate = document.createElement('p');
-  // calender icon
-  const icon = document.createElement('i');
-  icon.classList.add('far', 'fa-calendar', 'icon');
-  // date from - to
-  const spanDate = document.createElement('span');
-  spanDate.classList.add('date');
-  spanDate.textContent = `${locationClicked.visit_date_from} \u2014 ${locationClicked.visit_date_to}`;
-  //paragraph for the details text
-  const pText = document.createElement('p');
-  pText.textContent = locationClicked.description;
+  detailsImg.src = locationClicked.bigImage;
+  detailsImg.alt = locationClicked.name;
+  detailsName.textContent = locationClicked.name;
+  detailsCountry.textContent = locationClicked.country;
+  detailsDateFromTo.textContent = `${locationClicked.visit_date_from} \u2014 ${locationClicked.visit_date_to}`;
+  detailsSummary.textContent = locationClicked.description;
 
-  pIconDate.appendChild(spanCountry);
-  pIconDate.appendChild(icon);
-  pIconDate.appendChild(spanDate);
-  detailsDiv.appendChild(h2);
-  detailsDiv.appendChild(pIconDate);
-  detailsDiv.appendChild(pText);
+  // Lade Wetterdaten
+  loadCurrentWeather(locationClicked);
+}
 
-  detailsContainer.appendChild(img);
-  detailsContainer.appendChild(detailsDiv);
+// Catch the current weather of a location with the place_id
+async function loadCurrentWeather(location) {
+  const apiKey = '5i98pnmcmhafbmlz5qekijo9u36v81kmm1hih5i4';
+  const apiUrl = 'https://www.meteosource.com/api/v1/free/point';
+  const placeId = location.place_id;
+  const url = `${apiUrl}?place_id=${placeId}&sections=current&language=en&units=auto&key=${apiKey}`;
+
+  const response = await fetch(url);
+  const weatherData = await response.json();
+
+  const weatherIcon = document.getElementById('weatherIcon');
+
+  //TO DO
+  //Fetch the weatherIconMap here to show the right icon
+
+  const temperature = document.getElementById('temperature');
+  const summary = document.getElementById('weatherSummary');
+
+  weatherIcon.textContent = weatherData.current.icon;
+  temperature.textContent = weatherData.current.temperature;
+  summary.textContent = weatherData.current.summary;
 }
 
 fetchLocations();
