@@ -1,3 +1,5 @@
+import { weatherIconMap } from './weatherIconMap.js';
+
 async function fetchLocations() {
   const response = await fetch('http://localhost:8080/locations');
   const locations = await response.json();
@@ -97,16 +99,16 @@ async function loadCurrentWeather(location) {
 
   const response = await fetch(url);
   const weatherData = await response.json();
-
+  const weatherDescription = weatherData.current.icon;
+  const weatherIconId = weatherIconMap[weatherDescription] || 0; // Default to 0 if not found
   const weatherIcon = document.getElementById('weatherIcon');
 
-  //TO DO
-  //Fetch the weatherIconMap here to show the right icon
+  weatherIcon.src = `icons/weather_icons/${weatherIconId}.png`;
+  weatherIcon.alt = weatherDescription;
 
   const temperature = document.getElementById('temperature');
   const summary = document.getElementById('weatherSummary');
 
-  weatherIcon.textContent = weatherData.current.icon;
   temperature.textContent = weatherData.current.temperature;
   summary.textContent = weatherData.current.summary;
 }
