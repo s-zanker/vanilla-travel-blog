@@ -90,6 +90,7 @@ header i.logo {
 
 #weatherContainer {
   text-align: center;
+  background-color: #333;
   /* border: 1px solid #f9b21a; */
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -171,4 +172,8 @@ nav a.active {
   color: #f9b21a;
   font-weight: bold;
   pointer-events: none; /*link of actual side can not be clicked*/
+}
+
+#weatherContainer {
+  color: white;
 }
