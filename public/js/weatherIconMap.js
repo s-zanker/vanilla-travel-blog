@@ -26,7 +26,7 @@ export const weatherIconMap = {
   hail: 25,
   clear_night: 26,
   mostly_clear_night: 27,
-  partly_clear_night: 28,
+  partly_clear: 28,
   mostly_cloudy_night: 29,
   cloudy_night: 30,
   overcast_low_clouds_night: 31,

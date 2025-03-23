@@ -67,6 +67,58 @@ header i.logo {
 .icon {
   margin-left: 10px;
 }
+#detailsWeatherContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#detailsContainer,
+#weatherContainer {
+  flex: 1 1 48%; /* Beide Container nehmen jeweils 48% des verfügbaren Platzes ein und können bei Bedarf verkleinert werden */
+  max-width: 48%;
+}
+
+#detailsContainer {
+  min-width: 200px;
+}
+
+#weatherContainer {
+  text-align: center;
+  /* border: 1px solid #f9b21a; */
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#weatherIconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+}
+#weatherIcon {
+  max-width: 100%; /* Stellt sicher, dass das Bild die Containerbreite nicht überschreitet */
+  height: auto; /* Hält das Seitenverhältnis des Bildes */
+}
+
+#weatherSummary {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#temperature {
+  font-size: 18px;
+  font-weight: normal;
+  margin-left: 10px;
+}
 
 /* TYPO */
 body {

@@ -109,7 +109,7 @@ async function loadCurrentWeather(location) {
   const temperature = document.getElementById('temperature');
   const summary = document.getElementById('weatherSummary');
 
-  temperature.textContent = weatherData.current.temperature;
+  temperature.textContent = `${weatherData.current.temperature}\u00B0C`;
   summary.textContent = weatherData.current.summary;
 }
 
