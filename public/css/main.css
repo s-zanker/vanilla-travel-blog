@@ -13,7 +13,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  background-color: rgb(231, 231, 231);
+  /* background-color: rgb(231, 231, 231); */
+  background-color: #333;
 }
 
 header i.logo {
@@ -137,10 +138,12 @@ nav {
   font-style: normal;
   font-size: 1.8rem;
   text-transform: uppercase;
+  color: white;
 }
 
 nav a {
   font-size: 1.4rem;
+  color: white;
 }
 
 /* Navigation */
@@ -161,10 +164,11 @@ a {
   color: #333;
 }
 a:hover {
-  text-decoration: underline;
+  color: #f9b21a;
 }
 
 nav a.active {
-  color: blueviolet;
+  color: #f9b21a;
+  font-weight: bold;
   pointer-events: none; /*link of actual side can not be clicked*/
 }
