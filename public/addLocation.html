@@ -41,81 +41,83 @@
     <!-- MAIN -->
     <main>
       <!-- SECTION -->
-      <section class="oneColumn">
-        <h1>Add new Location</h1>
-        <form id="jsonForm">
-          <fieldset>
-            <legend>Travel Information</legend>
-            <label for="id">ID:</label>
-            <input type="text" id="id" name="id" required /><br /><br />
+      <section class="flexContainer">
+        <div>
+          <h1>Add new Location</h1>
+          <form id="jsonForm">
+            <fieldset>
+              <legend>Travel Information</legend>
+              <label for="id">ID:</label>
+              <input type="text" id="id" name="id" required /><br /><br />
 
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required /><br /><br />
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required /><br /><br />
 
-            <label for="country">Country:</label>
-            <input
-              type="text"
-              id="country"
-              name="country"
-              required
-            /><br /><br />
+              <label for="country">Country:</label>
+              <input
+                type="text"
+                id="country"
+                name="country"
+                required
+              /><br /><br />
 
-            <label for="visit_date_from">Start of journey:</label>
-            <input
-              type="date"
-              id="visit_date_from"
-              name="visit_date_from"
-              required
-            /><br /><br />
+              <label for="visit_date_from">Start of journey:</label>
+              <input
+                type="date"
+                id="visit_date_from"
+                name="visit_date_from"
+                required
+              /><br /><br />
 
-            <label for="visit_date_to">End of journey:</label>
-            <input
-              type="date"
-              id="visit_date_to"
-              name="visit_date_to"
-              required
-            /><br /><br />
-            <label for="description">Description:</label>
-            <textarea
-              id="description"
-              name="description"
-              rows="4"
-              required
-            ></textarea
-            ><br /><br />
-          </fieldset>
-          <fieldset>
-            <legend>Media information</legend>
-            <label for="thumbnail">Thumbnail Image (path):</label>
-            <input
-              type="text"
-              id="thumbnail"
-              name="thumbnail"
-              required
-            /><br /><br />
+              <label for="visit_date_to">End of journey:</label>
+              <input
+                type="date"
+                id="visit_date_to"
+                name="visit_date_to"
+                required
+              /><br /><br />
+              <label for="description">Description:</label>
+              <textarea
+                id="description"
+                name="description"
+                rows="4"
+                required
+              ></textarea
+              ><br /><br />
+            </fieldset>
+            <fieldset>
+              <legend>Media information</legend>
+              <label for="thumbnail">Thumbnail Image (path):</label>
+              <input
+                type="text"
+                id="thumbnail"
+                name="thumbnail"
+                required
+              /><br /><br />
 
-            <label for="bigImage">Big Image (path):</label>
-            <input
-              type="text"
-              id="bigImage"
-              name="bigImage"
-              required
-            /><br /><br />
-          </fieldset>
+              <label for="bigImage">Big Image (path):</label>
+              <input
+                type="text"
+                id="bigImage"
+                name="bigImage"
+                required
+              /><br /><br />
+            </fieldset>
 
-          <fieldset>
-            <legend>Additional Information</legend>
-            <label for="place_id">Weather API MeteoSource "place_id"</label>
-            <input
-              type="text"
-              id="place_id"
-              name="place_id"
-              required
-            /><br /><br />
-          </fieldset>
+            <fieldset>
+              <legend>Additional Information</legend>
+              <label for="place_id">Weather API MeteoSource "place_id"</label>
+              <input
+                type="text"
+                id="place_id"
+                name="place_id"
+                required
+              /><br /><br />
+            </fieldset>
 
-          <button type="submit">Add Location</button>
-        </form>
+            <button type="submit">Add Location</button>
+          </form>
+        </div>
       </section>
     </main>
   </body>

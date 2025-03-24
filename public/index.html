@@ -41,13 +41,13 @@
     <!-- MAIN -->
     <main>
       <!-- SECTION -->
-      <section class="twoColumn">
+      <section class="flexContainer twoColumn">
         <!-- List of locations-->
-        <div class="flexContainer" id="locations"></div>
+        <div class="flexContainer locationCards" id="locations"></div>
         <!-- Location Details-->
         <div>
           <img id="details-img" src="" alt="" />
-          <div id="detailsWeatherContainer">
+          <div class="flexContainer twoColumn" id="detailsWeatherContainer">
             <div id="detailsContainer">
               <h2 id="details-name"></h2>
               <p>
@@ -59,7 +59,7 @@
             </div>
             <div id="weatherContainer">
               <h2>Current Weather</h2>
-              <div id="weatherIconContainer">
+              <div class="flexContainer" id="weatherIconContainer">
                 <img src="" alt="" id="weatherIcon" />
                 <span id="weatherSummary"></span>
                 <span id="temperature"></span>
