@@ -17,10 +17,7 @@ async function fetchLocations() {
 
   locations.forEach((location) => {
     // fetch location data
-    const thumbnail = location.thumbnail;
-    const name = location.name;
-    const country = location.country;
-    const visitDateFrom = location.visit_date_from;
+    const { thumbnail, name, country, visit_date_from } = location;
 
     // Create all HTML Elements for each location
     // location card
@@ -50,7 +47,7 @@ async function fetchLocations() {
     // date
     const spanDate = document.createElement('span');
     spanDate.classList.add('date');
-    spanDate.textContent = visitDateFrom;
+    spanDate.textContent = visit_date_from;
 
     // add country, icon and date to paragraph
     p.appendChild(spanCountry);
