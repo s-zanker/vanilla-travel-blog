@@ -4,4 +4,4 @@
 
 Run `npx json-server data.json`
 
-Server should run at http://localhost:3000
+Server should run at http://localhost:8080
