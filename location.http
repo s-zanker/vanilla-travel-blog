@@ -19,4 +19,4 @@ POST http://localhost:3000/locations
 
 ### Delete location
 
-DELETE http://localhost:3000/locations/11
+DELETE http://localhost:8080/locations/b5ee

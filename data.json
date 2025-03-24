@@ -109,6 +109,17 @@
       "bigImage": "img/pixabay-nyc-1280.jpg",
       "description": "Ah, Malcesine! The ocean’s pulse is powerful here. And it is here, among the waves, where I found myself reminded of the unpredictability of life and the enduring mystery of the sea.",
       "place_id": "malcesine"
+    },
+    {
+      "id": "e47c",
+      "name": "Basel",
+      "country": "Schweiz",
+      "visit_date_from": "2025-03-11",
+      "visit_date_to": "2025-03-13",
+      "description": "“God bless ye, and have ye in His holy keeping, men,” murmured old Bildad, almost incoherently. “I hope ye’ll have fine weather now, so that Captain Ahab may soon be moving among ye—a pleasant sun is all he needs, and ye’ll have plenty of them in the tropic voyage ye go. Be careful in the hunt, ye mates. Don’t stave the boats needlessly, ye harpooneers; good white cedar plank is raised full three per cent. within the year. Don’t forget your prayers, either. Mr. Starbuck, mind that cooper don’t waste the spare staves. Oh! the sail-needles are in the green locker! Don’t whale it too much a’ Lord’s days, men; but don’t miss a fair chance either, that’s rejecting Heaven’s good gifts. Have an eye to the molasses tierce, Mr. Stubb; it was a little leaky, I thought. If ye touch at the islands, Mr. Flask, beware of fornication. Good-bye, good-bye! Don’t keep that cheese too long down in the hold, Mr. Starbuck; it’ll spoil. Be careful with the butter—twenty cents the pound it was, and mind ye, if—” ",
+      "thumbnail": "img/pixabay-berlin-thumb.jpg",
+      "bigImage": "img/pixabay-berlin-1280.jpg",
+      "place_id": "basel"
     }
   ]
 }

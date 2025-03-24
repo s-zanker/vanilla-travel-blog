@@ -5,3 +5,7 @@ GET https://www.meteosource.com/api/v1/free/point?place_id=new-york-city&section
 
 ### New York City - with 5 day forecast
 GET https://www.meteosource.com/api/v1/free/point?place_id=new-york-city&sections=current%2C%20daily&language=en&units=auto&key=5i98pnmcmhafbmlz5qekijo9u36v81kmm1hih5i4
+
+### Find the place_id 
+## put the name of the city behind text=
+https://www.meteosource.com/api/v1/free/find_places_prefix?text=basel&key=5i98pnmcmhafbmlz5qekijo9u36v81kmm1hih5i4
