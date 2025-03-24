@@ -17,7 +17,7 @@ async function fetchLocations() {
 
   locations.forEach((location) => {
     // fetch location data
-    const { thumbnail, name, country, visit_date_from } = location;
+    const { thumbnail, name, country, visit_date_from } = location; //Destructering
 
     // Create all HTML Elements for each location
     // location card
