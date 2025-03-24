@@ -41,15 +41,11 @@
     <!-- MAIN -->
     <main>
       <!-- SECTION -->
-      <section class="flexContainer">
-        <div>
-          <h1>Add new Location</h1>
-          <form id="jsonForm">
+      <section class="flex-container">
+        <form id="jsonForm">
+          <div class="form-container">
             <fieldset>
               <legend>Travel Information</legend>
-              <label for="id">ID:</label>
-              <input type="text" id="id" name="id" required /><br /><br />
-
               <label for="name">Name:</label>
               <input type="text" id="name" name="name" required /><br /><br />
 
@@ -102,10 +98,6 @@
                 name="bigImage"
                 required
               /><br /><br />
-            </fieldset>
-
-            <fieldset>
-              <legend>Additional Information</legend>
               <label for="place_id">Weather API MeteoSource "place_id"</label>
               <input
                 type="text"
@@ -114,10 +106,10 @@
                 required
               /><br /><br />
             </fieldset>
+          </div>
 
-            <button type="submit">Add Location</button>
-          </form>
-        </div>
+          <button type="submit">Add Location</button>
+        </form>
       </section>
     </main>
   </body>

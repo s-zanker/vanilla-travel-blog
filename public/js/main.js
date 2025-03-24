@@ -25,7 +25,7 @@ async function fetchLocations() {
     // Create all HTML Elements for each location
     // location card
     const locationCard = document.createElement('div');
-    locationCard.classList.add('locationCard');
+    locationCard.classList.add('location-card');
 
     // Add click Eventlistener to locationCard
     locationCard.addEventListener('click', function () {
@@ -101,13 +101,13 @@ async function loadCurrentWeather(location) {
   const weatherData = await response.json();
   const weatherDescription = weatherData.current.icon;
   const weatherIconId = weatherIconMap[weatherDescription] || 0; // Default to 0 if not found
-  const weatherIcon = document.getElementById('weatherIcon');
+  const weatherIcon = document.getElementById('weather-icon');
 
   weatherIcon.src = `icons/weather_icons/${weatherIconId}.png`;
   weatherIcon.alt = weatherDescription;
 
   const temperature = document.getElementById('temperature');
-  const summary = document.getElementById('weatherSummary');
+  const summary = document.getElementById('weather-summary');
 
   temperature.textContent = `${weatherData.current.temperature}\u00B0C`;
   summary.textContent = weatherData.current.summary;
