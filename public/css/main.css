@@ -9,6 +9,10 @@ body {
   grid-template-rows: auto auto;
 }
 header {
+  position: sticky; /* header stays on top of the page*/
+  top: 0px;
+  z-index: 1000;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
