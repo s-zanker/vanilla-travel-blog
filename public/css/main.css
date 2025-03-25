@@ -10,7 +10,7 @@ body {
 }
 
 main {
-  min-height: 500vh; /* only with this the right-column of the sectin will stick*/
+  min-height: 500vh; /* only with this the right column of the sectin will stick*/
 }
 header {
   position: sticky; /* header stays on top of the browser window*/
@@ -35,12 +35,8 @@ header i.logo {
   width: 100%;
 }
 
-.flex-container #right-column {
-  /* to make the details sticky*/
+.sticky {
   height: 100%;
-}
-
-#right-column {
   position: sticky;
   top: 0;
 }
@@ -199,6 +195,40 @@ nav a.active {
 
 #weather-container {
   color: white;
+}
+
+/*The Traveler*/
+.traveler-container {
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.traveler-container > div {
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  flex: 1;
+}
+#selfie {
+  max-width: 250px;
+}
+#traveler-big-picture {
+  min-width: 300px;
+}
+.floating-image {
+  float: left; /* image floats to the left */
+  margin-right: 30px; /* Abstand zwischen Bild und Text */
+  margin-bottom: 10px; /* Abstand zwischen Bild und unterem Text */
+  height: auto; /* Stellt sicher, dass das Bild das Seitenverhältnis beibehält */
+}
+/* BlackWhite color hover effect */
+.hover-image {
+  filter: grayscale(100%); /* 100% black white */
+  transition: filter 0.3s ease; /* soft transistion */
+}
+/* Hover-Effekt (Farbig) */
+.hover-image:hover {
+  filter: grayscale(0%); /* 0% no black and white filter */
 }
 
 /* FORM */
