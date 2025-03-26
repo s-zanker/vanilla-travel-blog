@@ -62,7 +62,6 @@
                 type="date"
                 id="visit_date_from"
                 name="visit_date_from"
-                required
               /><br /><br />
 
               <label for="visit_date_to">End of journey:</label>
@@ -70,41 +69,20 @@
                 type="date"
                 id="visit_date_to"
                 name="visit_date_to"
-                required
               /><br /><br />
               <label for="description">Description:</label>
-              <textarea
-                id="description"
-                name="description"
-                rows="4"
-                required
-              ></textarea
+              <textarea id="description" name="description" rows="4"></textarea
               ><br /><br />
             </fieldset>
             <fieldset>
               <legend>Media information</legend>
               <label for="thumbnail">Thumbnail Image (path):</label>
-              <input
-                type="text"
-                id="thumbnail"
-                name="thumbnail"
-                required
-              /><br /><br />
+              <input type="text" id="thumbnail" name="thumbnail" /><br /><br />
 
               <label for="bigImage">Big Image (path):</label>
-              <input
-                type="text"
-                id="bigImage"
-                name="bigImage"
-                required
-              /><br /><br />
-              <label for="place_id">Weather API MeteoSource "place_id"</label>
-              <input
-                type="text"
-                id="place_id"
-                name="place_id"
-                required
-              /><br /><br />
+              <input type="text" id="bigImage" name="bigImage" /><br /><br />
+              <!-- <label for="place_id">Weather API MeteoSource "place_id"</label> -->
+              <input type="hidden" id="place_id" name="place_id" /><br /><br />
             </fieldset>
           </div>
 
