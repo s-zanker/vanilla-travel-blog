@@ -33,6 +33,7 @@ async function fetchLocations() {
     const img = document.createElement('img');
     img.src = thumbnail; // Das Thumbnail als Bildquelle
     img.alt = name; // Alt-Text für das Bild
+    img.classList.add('hover-image');
     // name of location
     const h2 = document.createElement('h2');
     h2.textContent = name; // Der Name der Location
@@ -77,6 +78,7 @@ function loadDetails(locationClicked) {
   const detailsSummary = document.getElementById('details-summary');
 
   detailsImg.src = locationClicked.bigImage;
+  detailsImg.classList.add('hover-image');
   detailsImg.alt = locationClicked.name;
   detailsName.textContent = locationClicked.name;
   detailsCountry.textContent = locationClicked.country;

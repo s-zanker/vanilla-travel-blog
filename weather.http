@@ -8,4 +8,4 @@ GET https://www.meteosource.com/api/v1/free/point?place_id=new-york-city&section
 
 ### Find the place_id 
 ## put the name of the city behind text=
-https://www.meteosource.com/api/v1/free/find_places_prefix?text=basel&key=5i98pnmcmhafbmlz5qekijo9u36v81kmm1hih5i4
+https://www.meteosource.com/api/v1/free/find_places_prefix?text=gallipoli&key=5i98pnmcmhafbmlz5qekijo9u36v81kmm1hih5i4
