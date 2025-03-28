@@ -24,7 +24,7 @@ export const weatherIconMap = {
   freezing_rain: 23,
   possible_freezing_rain: 24,
   hail: 25,
-  clear_night: 26,
+  clear: 26,
   mostly_clear: 27,
   partly_clear: 28,
   mostly_cloudy_night: 29,
